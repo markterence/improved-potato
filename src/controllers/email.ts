@@ -15,8 +15,8 @@ const app = new Hono()
         return c.json("`htmlContent` is not base64 encoded", 400);
     }
 
-    // Decode the base64 htmlContent 
-    const decodedHtmlContent = Buffer.from(htmlContent, 'base64').toString('utf-8');
+    // Decode the base64 htmlContent
+    const decodedHtmlContent = Buffer.from(htmlContent.replace("data:text/html;base64,", ""), 'base64').toString('utf-8');
 
     const transporter = nodemailer.createTransport({
         host,
