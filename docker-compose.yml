@@ -1,5 +1,8 @@
 services:
   potato:
+    dockerfile:
+      context: .
+      dockerfile: Dockerfile
     image: hono-dev/potato:latest
     ports:
       - "0.0.0.0:8444:3000"
