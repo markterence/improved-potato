@@ -1,0 +1,7 @@
+services:
+  potato:
+    networks:
+      - nginx_net
+networks:
+  nginx_net:
+    external: true
