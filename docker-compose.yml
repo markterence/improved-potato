@@ -1,6 +1,6 @@
 services:
   potato:
-    dockerfile:
+    build:
       context: .
       dockerfile: Dockerfile
     image: hono-dev/potato:latest
