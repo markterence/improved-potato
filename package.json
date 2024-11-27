@@ -1,0 +1,19 @@
+{
+  "name": "improved-potato",
+  "type": "module",
+  "scripts": {
+    "dev": "dotenvx run -- tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "hono": "^4.6.12",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.25.1",
+    "@types/node": "^20.11.17",
+    "@types/nodemailer": "^6.4.17",
+    "tsx": "^4.7.1"
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+}
