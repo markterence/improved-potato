@@ -25,7 +25,7 @@ const app = new Hono()
             user,
             pass: password,
         },
-        secure: true,
+        secure: false,
         tls: {
             rejectUnauthorized: false,
         }
